@@ -38,9 +38,20 @@ const completed = (cell) => {
   cell.style.background = "purple";
 };
 
+const grid = document.getElementsByTagName("td");
+
+document.addEventListener("keydown",
+  function() {
+    if (event.key > 0 && event.key < 10) {
+      grid[event.key-1].click();
+    }
+  }
+);
+
 const setUp = () => {
   const answers = randomAnswers();
   const grid = document.getElementsByTagName("td");
+
   let i = 0;
   for(let cell of grid) {
     cell.completed = cell.clicked = false;
@@ -58,6 +69,15 @@ const setUp = () => {
           this.style.background = "blue";
       }
     );
+
+    document.addEventListener("keydown",
+      function() {
+        if (event.key > 0 && event.key < 10) {
+          grid[event.key-1].click();
+        }
+      }
+    );
+
     cell.addEventListener("click",
       function() {
         if (!ready) return;
