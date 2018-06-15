@@ -2,6 +2,21 @@ const randomAnswers = () => [1,1,2,2,3,3,4,4,5].sort((a,b) => 0.5-Math.random())
 
 let clickedArray = [];
 
+let started = false;
+let interval;
+let time = 0;
+
+const startTimer = () => {
+  if (!started) {
+    interval = setInterval(() => {
+      time++;
+      document.getElementById("timer").innerHTML= "Elapsed time: "+time;
+    }
+      ,1000);
+    started = true;
+  }
+};
+
 const reveal = (cell) => {
   cell.clicked = true;
   cell.innerHTML = cell.value;
@@ -30,6 +45,7 @@ const setUp = () => {
     );
     cell.addEventListener("click",
       function() {
+        startTimer();
         clickedArray.push(this);
         reveal(this);
       }
