@@ -1,6 +1,6 @@
 let p = Promise.resolve([1,2,3,4]);
-const inspect = require("util").inspect;
-const ins = (x) => console.log(inspect(x, {depth: null}));
+// const inspect = require("util").inspect;
+const ins = require("./ins.js"); // (x) => console.log(inspect(x, {depth: null}));
 let q = p.then((r) => {
   ins(r);
   return r.map((x)=>x*x);
