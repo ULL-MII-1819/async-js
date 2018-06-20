@@ -13,3 +13,7 @@ let promise = new Promise(function(resolve, reject) {
 
 promise.then((v) => console.log(v)
 ).catch((e) => console.log(e.message));
+
+promise.then((v) => console.log(v),
+             (e) => console.log(e.message)
+);
