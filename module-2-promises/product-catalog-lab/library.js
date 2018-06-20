@@ -2,11 +2,6 @@
 
   function myLibrary() {
   
-    const searchProductById = function() {}; 
-    const searchProductsByType = function() {}; 
-    const searchProducstByPrice = function() {}; 
-    const searchAllProducts = function() {};
-
     const types = ['Electronic', 'Book', 'Clothing', 'Food']; 
     const createRandomProduct = function(id) {
       const price = (Math.random()*500).toFixed(2);
@@ -21,7 +16,22 @@
       }
       return catalog;
     };
-    console.log(createRandomCatalog(4));
+
+    let catalog = createRandomCatalog(100);
+
+    const searchProductById = function() {}; 
+    const searchProductsByType = function() {}; 
+    const searchProducstByPrice = function() {}; 
+    
+    const searchAllProducts = function() {
+      return new Promise(function(resolve, reject) {
+        setTimeout(
+          function() {
+            resolve(catalog);
+          }, 1000)
+      });
+    };
+
 
     return {
       searchProductById,
