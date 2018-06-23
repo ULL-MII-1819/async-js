@@ -18,10 +18,6 @@
     };
 
     let catalog = createRandomCatalog(100);
-
-    const searchProductById = function() {}; 
-    const searchProductsByType = function() {}; 
-    const searchProducstByPrice = function() {}; 
     
     const searchAllProducts = function() {
       return new Promise(function(resolve, reject) {
@@ -32,11 +28,38 @@
       });
     };
 
+    const searchProductById = function(id) {
+      id = Number(id);
+      return new Promise(function(resolve,reject) {
+        setTimeout(function() {
+          let x = catalog.find((x) => x.id === id);
+          if (x !== undefined) return resolve(x);
+          else return reject("Product "+id+" Not found");
+        }, 1000);
+      });
+    }; 
+
+    const searchProductsByType = function(t) {
+      return new Promise(function(resolve, reject) {
+        setTimeout( () => resolve(catalog.filter((x) => x.type === t))
+        , 1000);
+      });
+    }; 
+
+    const searchProductsByPrice = function(price, difference) {
+      price = Number(price);
+      difference = Number(difference);
+      return new Promise(function(resolve, reject) {
+        setTimeout(function() {
+          return resolve(catalog.filter((x) => Math.abs(x.price -price) < difference))
+        }, 1000);
+      });
+    }; 
 
     return {
       searchProductById,
       searchProductsByType,
-      searchProducstByPrice,
+      searchProductsByPrice,
       searchAllProducts
     };
   }
