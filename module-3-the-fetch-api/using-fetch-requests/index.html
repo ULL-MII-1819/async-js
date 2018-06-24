@@ -32,7 +32,12 @@
           */
           body: JSON.stringify(myBody)
       }
-      fetch("https://jsonplaceholder.typicode.com/posts", initObject).then(function(result){
+      //creates a new request object using an URL and an init object
+      let request = new Request("https://jsonplaceholder.typicode.com/posts",initObject)
+      /* The Request constructor takes in the same parameters as the fetch() method,
+         an URL and an optional init object
+      */
+      fetch(request).then(function(result){
          /*
          A Response object has several methods that are used to extract the fetched data.
          Here are the common extraction methods:
