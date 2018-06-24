@@ -36,6 +36,14 @@ function updateTable(tableId, productArray) {
   });
 }
 
+function updateExamineProduct(product) {
+  document.getElementById("productText").innerHTML = `
+    Product Id: ${product.id} <br/>
+    Price:      ${product.price} <br/>
+    Type:       ${product.type} <br/>
+  `;
+}
+
 api.searchAllProducts().then(
   (catalog) => updateTable("allTable", catalog)
 )
