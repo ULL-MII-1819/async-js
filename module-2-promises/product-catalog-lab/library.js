@@ -54,6 +54,7 @@
     };
 
     return {
+      //createRandomCatalog,
       searchProductById,
       searchProductsByType,
       searchProductsByPrice,
