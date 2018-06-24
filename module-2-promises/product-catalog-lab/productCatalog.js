@@ -50,7 +50,8 @@ function processSearch(id) {
   api.searchProductById(id).then((item) => {
      updateExamineProduct(item);
     return api.searchProductsByTypeAndPrice(item.type, item.price, 50);
-  }).then((items) => updateTable("examineTable", items));
+  }).then((items) => updateTable("examineTable", items)
+);.catch((err) => alert(err));
 }
 
 api.searchAllProducts().then(
