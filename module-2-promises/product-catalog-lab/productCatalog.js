@@ -18,6 +18,8 @@ function updateTable(tableId, productArray) {
   const kind = ["TD", "TD", "TD"];
   const type = ["id", "type", "price"];
   const table = document.getElementById(tableId);
+  removeTableHeader(tableId);
+  createTableHeader(tableId);
   productArray.map((item) => {
     let tr = document.createElement("tr");
     for(let i = 0; i<kind.length; i++) {
