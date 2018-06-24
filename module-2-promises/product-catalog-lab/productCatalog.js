@@ -24,14 +24,14 @@ function updateTable(tableId, productArray) {
     let tr = document.createElement("tr");
     for(let i = 0; i<kind.length; i++) {
       let td = document.createElement(kind[i]);
-      td.appendChild(document.createTextNode(item[type[i]]))
+      td.appendChild(document.createTextNode(item[type[i]]));
       tr.appendChild(td);
-      }
-    tr.appendChild(
-      document.createElement("button").
-        appendChild(
-          document.createTextNode("Examine"))
-    );
+    }
+    let td4 = document.createElement("button");
+    td4.addEventListener('click',function(){
+    });
+    td4.appendChild(document.createTextNode("Examine"));
+    tr.appendChild(td4);
     table.appendChild(tr);
   });
 }
