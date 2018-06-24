@@ -53,10 +53,19 @@
       });
     };
 
+    const searchProductsByTypeAndPrice = function(type, price, difference) {
+      price = Number(price);
+      difference = Number(difference);
+      return new Promise(function(resolve, reject) {
+        setTimeout( () => resolve(catalog.filter((x) => (x.type === type) && (Math.abs(x.price -price) < difference))), 1000);
+      });
+    };
+
     return {
       //createRandomCatalog,
       searchProductById,
       searchProductsByType,
+      searchProductsByTypeAndPrice,
       searchProductsByPrice,
       searchAllProducts
     };
