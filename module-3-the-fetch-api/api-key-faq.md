@@ -26,8 +26,8 @@ Here are the steps to obtain a free Text Analytics or Face API Key:
 
 7. You will now be able to see all of your API Subscriptions. Click the show button to reveal the API keys.
 
-* [azure-microsoft-com-try-conginitve-services-my-apis-agregar-2.png](azure-microsoft-com-try-conginitve-services-my-apis-agregar-2.png)
-* ![azure-microsoft-com-try-conginitve-services-my-apis-agregar.png](azure-microsoft-com-try-conginitve-services-my-apis-agregar.png)
-* ![azure-microsoft-com-try-conginitve-services-my-apis-quickstart.png](azure-microsoft-com-try-conginitve-services-my-apis-quickstart.png)
-* ![azure-microsoft-com-try-conginitve-services-my-apis-welcome.png](azure-microsoft-com-try-conginitve-services-my-apis-welcome.png)
+* [azure-microsoft-com-try-conginitve-services-my-apis-agregar-2.png](tutorial-lab-text-analytics-API/images/azure-microsoft-com-try-conginitve-services-my-apis-agregar-2.png)
+* ![azure-microsoft-com-try-conginitve-services-my-apis-agregar.png](tutorial-lab-text-analytics-API/images/azure-microsoft-com-try-conginitve-services-my-apis-agregar.png)
+* ![azure-microsoft-com-try-conginitve-services-my-apis-quickstart.png](tutorial-lab-text-analytics-API/images/azure-microsoft-com-try-conginitve-services-my-apis-quickstart.png)
+* ![azure-microsoft-com-try-conginitve-services-my-apis-welcome.png](tutorial-lab-text-analytics-API/images/azure-microsoft-com-try-conginitve-services-my-apis-welcome.png)
 azure-microsoft-com-try-conginitve-services-my-apis.png
