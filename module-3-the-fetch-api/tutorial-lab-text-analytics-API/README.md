@@ -5,15 +5,15 @@ The tutorial for this module is designed to teach you how to use the Fetch API w
 
 * [Tutorial 3 Intro Video](https://youtu.be/p7PeC62jfBc)
 
-Demo Link: Text Analytics Demo
+Demo Link: [Text Analytics Demo](https://courses.edx.org/asset-v1:Microsoft+DEV234x+1T2018a+type@asset+block/textAnalytics.html)
 
 To download the reference solutions you can right click the links below and press Save link as...
 
 Reference Solution:
 
-textAnalytics.html
+* [textAnalytics.html](https://courses.edx.org/asset-v1:Microsoft+DEV234x+1T2018a+type@asset+block/textAnalytics.html)
 
-textAnalytics.js
+* [textAnalytics.js](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/487890186061a3ccd6db8c6dc43c4f8d/asset-v1:Microsoft+DEV234x+1T2018a+type@asset+block/textAnalytics.js)
 
 
 * Observaciones
