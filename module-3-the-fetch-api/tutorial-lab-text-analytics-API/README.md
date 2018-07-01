@@ -16,9 +16,9 @@ Reference Solution:
 * [textAnalytics.js](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/487890186061a3ccd6db8c6dc43c4f8d/asset-v1:Microsoft+DEV234x+1T2018a+type@asset+block/textAnalytics.js)
 
 
-* Observaciones
+## Observaciones
 
-- Tuve  que obtener nuevas claves y sustitur el punto de acceso en el código:
+- Tuve  que obtener nuevas claves y sustituir el punto de acceso en el código:
 
 * Punto de conexión: https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.0
 * Clave 1: 7ba9dbac532a48e983b49e146923c93b
