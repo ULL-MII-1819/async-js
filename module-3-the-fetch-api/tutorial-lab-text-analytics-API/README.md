@@ -1,21 +1,46 @@
+
+## Tutorial Guidelines
+
+The tutorial for this module is designed to teach you how to use the Fetch API with the Text Analytics API from Microsoft Cognitive Services to determine the key phrases in a paragraph of text.
+
 * [Tutorial 3 Intro Video](https://youtu.be/p7PeC62jfBc)
 
-For additional information , please visit:
+Demo Link: Text Analytics Demo
 
-Microsoft Cognitive Services: https://aka.ms/edx-dev234x-cog01
-Text Analytics API: https://aka.ms/edx-dev234x-cog02
-API Reference Documentation: Text Analytics API Reference Documentation
+To download the reference solutions you can right click the links below and press Save link as...
 
-Note: If you do not wish to sign up for an API Key from Microsoft Cognitive Services you may use the following keys for the purposes of this course. The following API Keys are not guaranteed to work if too many students use up the free trial usage allowance.
+Reference Solution:
 
-Face API Keys: 
+textAnalytics.html
 
-023f1661f6244d3e9f81501646ef9a0f
+textAnalytics.js
 
-17a26f2fbc9240aebfb272df98928812
 
-Text Analytics API Keys: 
+* Observaciones
 
-8e9100485bab4a7a8b3b261626e7e3c6
+- Tuve  que obtener nuevas claves y sustitur el punto de acceso en el código:
 
-7e3029df2246402ebd81c3b480eb813b
+* Punto de conexión: https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.0
+* Clave 1: 7ba9dbac532a48e983b49e146923c93b
+* Clave 2: db2f99581ad24d668081bd4d82008788
+
+```
+var myHeader =  new Headers({
+    'Content-Type': 'application/json',
+    'Ocp-Apim-Subscription-Key':'7ba9dbac532a48e983b49e146923c93b'
+});
+
+var initObject = {
+    method: 'POST',
+    body: JSON.stringify(reqBody),
+    headers: myHeader
+}
+
+// Punto de conexión: https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.0
+// var request = new Request('https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/keyPhrases', initObject);
+var request = new Request('https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.0/keyPhrases', initObject);
+
+fetch(request).then(function(response){
+```
+
+Véase [../api-key-faq.md](../api-key-faq.md)
