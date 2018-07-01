@@ -44,3 +44,7 @@ fetch(request).then(function(response){
 ```
 
 Véase [../api-key-faq.md](../api-key-faq.md)
+
+## Véase También
+
+* [Documentación de API Management de Azure](https://docs.microsoft.com/es-es/azure/api-management/)
