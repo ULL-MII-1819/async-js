@@ -1,4 +1,4 @@
-* ![]()* ![]()* ![]()* ![&](&)## API Key FAQ
+## API Key FAQ
 
 This is a guide on how to obtain a free Text Analytics or Face API Key from Microsoft Cognitive Services.
 
