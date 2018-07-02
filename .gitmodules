@@ -1,0 +1,9 @@
+[submodule "paulqlove"]
+	path = paulqlove
+	url = git@github.com:paulqlove/edx.git
+[submodule "johnwind7"]
+	path = johnwind7
+	url = git@github.com:JohnWind7/Face-API-Demo.git
+[submodule "module-3-the-fetch-api/assignment-3/johnwind7"]
+	path = module-3-the-fetch-api/assignment-3/johnwind7
+	url = git@github.com:JohnWind7/Face-API-Demo.git
