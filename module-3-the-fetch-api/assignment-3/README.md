@@ -31,7 +31,7 @@ Fin de la transcripción. Saltar al inicio.
 
 Curso   Module 3 - Fetch API   Module 3 Assignment: Face API   Assignment 3 Introduction
 
-Assignment Guidelines
+### Assignment Guidelines
 
 The assignment for this module is to use the Face API from Microsoft Cognitive Services to determine the age and gender of face images.
 
@@ -59,11 +59,10 @@ Text Analytics API Keys:
 
 The user should see the following:
 
-An application title
-A section labeled "Enter Image URL" that includes an input field and a button labeled "Analyse".
-A section labeled "Image" that displays the image of the provided URL
-A section labeled "Attributes" that displays the age and gender of the image provided
-The user should be able to do the following:
-
-Populate the Image Section with the provided URL image by pressing the Analyse button and providing an image URL.
-Populate the Attributes Section with the age and gender of the analyzed image by pressing the Analyse button and providing an image URL. If the image does not contain a face, the attributes section should show "No Faces Detected".
+* An application title
+* A section labeled "Enter Image URL" that includes an input field and a button labeled "Analyse".
+* A section labeled "Image" that displays the image of the provided URL
+* A section labeled "Attributes" that displays the age and gender of the image provided
+* The user should be able to do the following:
+  * Populate the Image Section with the provided URL image by pressing the Analyse button and providing an image URL.
+  * Populate the Attributes Section with the age and gender of the analyzed image by pressing the Analyse button and providing an image URL. If the image does not contain a face, the attributes section should show "No Faces Detected".
