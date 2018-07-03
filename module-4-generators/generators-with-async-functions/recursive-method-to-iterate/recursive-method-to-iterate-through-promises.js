@@ -14,7 +14,7 @@ function run(genF) {
       return Promise.resolve(iteration.value);
     return Promise.resolve(iteration.value).then(
         x => iterate(genO.next(x))
-      ).catch( e => iterate(gen0.throw(e)))
+      ).catch( e => iterate(genO.throw(e)))
   }
   try {
     return iterate(genO.next()); // Start iteration
@@ -47,11 +47,11 @@ function *gen(){
         console.log(number)
         //number = 12345
 
-        var string = yield "abc";
+        let string = yield "abc";
         console.log(string)
         //string = "abc"
 
-        var obj = yield {id:123,name:"xyz"};
+        let obj = yield {id:123,name:"xyz"};
         console.log(obj)
         //obj = Object {id:123,name:"xyz"}
 
