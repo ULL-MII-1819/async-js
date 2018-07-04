@@ -17,7 +17,9 @@ function run(genF) {
       ).catch( e => iterate(genO.throw(e)))
   }
   try {
-    return iterate(genO.next()); // Start iteration
+    let result = iterate(genO.next()); // Start iteration
+    console.log((typeof result)+":"+result);
+    return result;
   } catch(e) {
     return Promise.reject(e);
   }
