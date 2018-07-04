@@ -5,11 +5,12 @@ const fetch = require("node-fetch");
 
 const url = "https://api.github.com/users/";
 
-function getNombre(userName) {
+async function getNombre(userName) {
 
-  fetch(url+userName)
-    .then(respuesta => respuesta.json())
-    .then(j => console.log(j.name))
+  let respuesta = await fetch(url+userName);
+  let json      = await respuesta.json();
+  console.log(json.name);
 }
 
 getNombre("crguezl");
+
