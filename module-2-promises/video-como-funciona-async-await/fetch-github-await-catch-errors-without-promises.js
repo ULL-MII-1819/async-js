@@ -8,16 +8,16 @@ const url = "https://api.github.com/users/";
 async function getNombre(userName) {
 
   let respuesta = await fetch(url+userName);
+  if (respuesta.status !== 200) throw new Error("El usuario no existe!")
   // console.log(respuesta.json());
   let json      = await respuesta.json();
 
-  if (json.satus !== 200) throw new Error("El usuario no existe!")
   return json.name;
 }
 
 (async function() {
   try {
-    let name = await getNombre("no-existe-este-usuario");
+    let name = await getNombre("usuario-no-existe");
     console.log(name);
   } catch(e) {
     console.log("Brrr! "+e);
