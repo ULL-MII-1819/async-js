@@ -8,6 +8,7 @@ const url = "https://api.github.com/users/";
 async function getNombre(userName) {
 
   let respuesta = await fetch(url+userName);
+  console.log(respuesta.json());
   let json      = await respuesta.json();
   console.log(json.name);
 }
