@@ -24,3 +24,4 @@ Good luck, and happy coding.
 ## Star Wars API
 
 * [Star Wars API Documentation](https://swapi.co/documentation)
+* [swapi-node npm module](https://github.com/salty-pig/swapi-node#readme)
