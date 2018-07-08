@@ -4,3 +4,9 @@
 [submodule "module-3-the-fetch-api/assignment-3/johnwind7"]
 	path = module-3-the-fetch-api/assignment-3/johnwind7
 	url = git@github.com:JohnWind7/Face-API-Demo.git
+[submodule "module-4-generators/assignment-4/Star-Wars-Starship-Comparison"]
+	path = module-4-generators/assignment-4/Star-Wars-Starship-Comparison
+	url = git@github.com:Vignesh-2896/Star-Wars-Starship-Comparison.git
+[submodule "module-4-generators/assignment-4/asycJSEdxCourse"]
+	path = module-4-generators/assignment-4/asycJSEdxCourse
+	url = git@github.com:IngCristobalFlores111/asycJSEdxCourse.git
