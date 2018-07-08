@@ -15,8 +15,8 @@ try{
     console.log(a);
     let b = genObject.next(); // Object {value: 'b', done: false}
     console.log(b);
-    let c = genObject.next(); // never occurs
-    console.log(b);
+    let c = genObject.next();
+    console.log(c);           // never occurs
     let d = genObject.next(); // never occurs
     console.log(d);
 }
