@@ -12,4 +12,4 @@ function getNombre(userName) {
     .then(j => console.log(j.name))
 }
 
-getNombre("crguezl");
+getNombre(process.argv[2] || "crguezl");

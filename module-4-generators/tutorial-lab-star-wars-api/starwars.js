@@ -1,18 +1,18 @@
-document.getElementById("button").addEventListener('click',function(){
-    run(gen).catch(function(err){
+document.getElementById("button").addEventListener('click', function() {
+    run(gen).catch(function(err) {
         alert(err.message);
     });
 });
 
-function run(genFunc){
-    const genObject= genFunc(); //creating a generator object
+function run(genFunc) {
+    const genObject = genFunc(); //creating a generator object
 
-    function iterate(iteration){ //recursive function to iterate through promises
-        if(iteration.done) //stop iterating when done and return the final value wrapped in a promise
+    function iterate(iteration) { //recursive function to iterate through promises
+        if (iteration.done) //stop iterating when done and return the final value wrapped in a promise
             return Promise.resolve(iteration.value);
         return Promise.resolve(iteration.value) //returns a promise with its then() and catch() methods filled
-        .then(x => iterate(genObject.next(x))) //calls recursive function on the next value to be iterated
-        .catch(x => iterate(genObject.throw(x))); //throws an error if a rejection is encountered
+            .then(x => iterate(genObject.next(x))) //calls recursive function on the next value to be iterated
+            .catch(x => iterate(genObject.throw(x))); //throws an error if a rejection is encountered
     }
 
     try {
@@ -22,10 +22,10 @@ function run(genFunc){
     }
 }
 
-function *gen(){
+function* gen() {
     //check if input is valid
     let input = document.getElementById("input").value;
-    if(input > 7 || input < 1 ){
+    if (input > 7 || input < 1) {
         throw new Error("Invalid Input - Enter a number between 1 and 7");
     }
 
@@ -37,10 +37,10 @@ function *gen(){
     //fetch the characters
     let characters = film.characters;
     let characterString = "Characters: <br>\n<ol>\n";
-    for(let i = 0; i < characters.length ; i++){
+    for (let i = 0; i < characters.length; i++) {
         let tempCharacterResponse = yield fetch(characters[i]);
         let tempCharacter = yield tempCharacterResponse.json();
-        characterString += "<li> "+tempCharacter.name + "</li>";
+        characterString += "<li> " + tempCharacter.name + "</li>";
     }
     characterString += "</ol>\n</br>";
 
